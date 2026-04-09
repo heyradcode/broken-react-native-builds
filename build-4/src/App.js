@@ -8,10 +8,10 @@ export function App() {
     RNBootSplash.hide({ fade: true, duration: 500 }).then(() => {
       console.log('bootsplash hidden');
     })
+  }, []);
 
-    });
   return (
-    <View>
+    <View style={{ flex: 1, backgroundColor: 'white' }}>
       <Text style={{
         position: 'absolute',
         top: 200,
